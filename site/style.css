@@ -1,0 +1,280 @@
+/*Nav*/
+#mainpart {
+  margin-top: 60px;
+}
+header {
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin-right: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  ul.desktop-menu {
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    position: absolute;
+    top: 60px; 
+    right: 10px;
+    background-color: lightgray;
+    padding: 10px;
+    flex-direction: column;
+  }
+}
+
+/* Register */
+.register-photo {
+  background:#f1f7fc;
+  padding:80px 0;
+}
+
+.register-photo .image-holder {
+  display:table-cell;
+  width:auto;
+  background:url(https://files.porsche.com/filestore/image/multimedia/none/992-gt3-rs-modelimage-sideshot/model/cfbb8ed3-1a15-11ed-80f5-005056bbdc38/porsche-model.png);
+  background-size:cover;
+}
+
+.register-photo .form-container {
+  display:table;
+  max-width:900px;
+  width:90%;
+  margin:0 auto;
+  box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.register-photo form {
+  display:table-cell;
+  width:400px;
+  background-color:#ffffff;
+  padding:40px 60px;
+  color:#505e6c;
+}
+
+@media (max-width:991px) {
+  .register-photo form {
+    padding:40px;
+  }
+}
+
+.register-photo form h2 {
+  font-size:24px;
+  line-height:1.5;
+  margin-bottom:30px;
+}
+
+.register-photo form .form-control {
+  background:#f7f9fc;
+  border:none;
+  border-bottom:1px solid #dfe7f1;
+  border-radius:0;
+  box-shadow:none;
+  outline:none;
+  color:inherit;
+  text-indent:6px;
+  height:40px;
+}
+
+.register-photo form .form-check {
+  font-size:13px;
+  line-height:20px;
+}
+
+.register-photo form .btn-primary {
+  background:#f4476b;
+  border:none;
+  border-radius:4px;
+  padding:11px;
+  box-shadow:none;
+  margin-top:35px;
+  text-shadow:none;
+  outline:none !important;
+}
+
+.register-photo form .btn-primary:hover, .register-photo form .btn-primary:active {
+  background:#eb3b60;
+}
+
+.register-photo form .btn-primary:active {
+  transform:translateY(1px);
+}
+
+.register-photo form .already {
+  display:block;
+  text-align:center;
+  font-size:12px;
+  color:#6f7a85;
+  opacity:0.9;
+  text-decoration:none;
+}
+/* Login */
+.login-photo {
+  background:#f1f7fc;
+  padding:80px 0;
+}
+
+.login-photo .image-holder {
+  display:table-cell;
+  width:auto;
+  background:url("https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/ferrari-ff-uk-4_01.jpg?itok=WJgzaNKH");
+  background-size:cover;
+}
+
+.login-photo .form-container {
+  display:table;
+  max-width:900px;
+  width:90%;
+  margin:0 auto;
+  box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.login-photo form {
+  display:table-cell;
+  width:400px;
+  background-color:#ffffff;
+  padding:40px 60px;
+  color:#505e6c;
+}
+
+@media (max-width:991px) {
+  .login-photo form {
+    padding:40px;
+  }
+}
+
+.login-photo form h2 {
+  font-size:24px;
+  line-height:1.5;
+  margin-bottom:30px;
+}
+
+.login-photo form .form-control {
+  background:#f7f9fc;
+  border:none;
+  border-bottom:1px solid #dfe7f1;
+  border-radius:0;
+  box-shadow:none;
+  outline:none;
+  color:inherit;
+  text-indent:6px;
+  height:40px;
+}
+
+.login-photo form .form-check {
+  font-size:13px;
+  line-height:20px;
+}
+
+.login-photo form .btn-primary {
+  background:#f4476b;
+  border:none;
+  border-radius:4px;
+  padding:11px;
+  box-shadow:none;
+  margin-top:35px;
+  text-shadow:none;
+  outline:none !important;
+}
+
+.login-photo form .btn-primary:hover, .register-photo form .btn-primary:active {
+  background:#eb3b60;
+}
+
+.login-photo form .btn-primary:active {
+  transform:translateY(1px);
+}
+
+.login-photo form .already {
+  display:block;
+  text-align:center;
+  font-size:12px;
+  color:#6f7a85;
+  opacity:0.9;
+  text-decoration:none;
+}
+
+/* Main */ 
+main{
+  width: 65%;
+  height: 5%;
+}
+
+#mainpart{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+h4{
+  text-align: center;
+}
+#filter{
+  margin-left: 5%;
+  border: 1px solid black;
+}
+
+/* footer */
+footer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; 
+
+}
+
+#contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+h2{
+  text-align: center;
+}
+
+#send{
+  width: 7%;
+  height: 10%;
+}
+
+
+
+
+
+
